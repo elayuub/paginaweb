@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+    <h2>Buscar Cámaras de Fotos</h2>
+
+    <form action="procesar_busqueda.php" method="get">
+        <label>
+            Marca:
+        <input type="text" name="marca">
+        </label>
+
+        <label>
+            Resolución (en megapíxeles):
+        <input type="number" name="resolucion">
+        </label>
+
+        <label>
+            Tipo de Cámara:
+        </label>
+        <select id="tipo" name="tipo">
+            <option value="compacta">Compacta</option>
+            <option value="DSLR">DSLR</option>
+            <option value="mirrorless">Sin espejo</option>
+            <option value="bridge">Bridge</option>
+        </select>
+
+        <label>
+            Precio máximo:
+            <input type="number" name="precio">
+        </label>
+        <button type="submit">Buscar</button>
+    </form>
+
+</body>
+</html>
