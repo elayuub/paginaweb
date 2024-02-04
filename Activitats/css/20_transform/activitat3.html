@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .circulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circulo-red,
+        .circulo-blue {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .circulo-red {
+            background-color: red;
+        }
+        .circulo-blue {
+            background-color: blue;
+            position: relative;
+            left: 0;
+        }
+        .circulo-blue:hover {
+            transform: translateX(-50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="circulo">
+        <div class="circulo-red"></div>
+        <div class="circulo-blue"></div>
+    </div>
+</body>
+</html>
