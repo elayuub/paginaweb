@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        .sol, .luna {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffd700;
+        }
+        .luna {
+            background-color: #a0a0a0;
+            animation: eclipseAnimation 3s linear infinite;
+        }
+        @keyframes eclipseAnimation {
+            0%, 100% {
+                left: 50%;
+            }
+            50% {
+                left: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sol"></div>
+    <div class="luna"></div>
+</body>
+</html>
