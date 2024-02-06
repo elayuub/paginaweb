@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation 4</title>
+<style>
+    body {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+    .reloj {
+        width: 300px;
+        height: 300px;
+        border: 5px solid purple;
+        border-radius: 50%;
+        position:fixed;
+    }
+    .manecilla {
+        position: absolute;
+        background-color: purple;
+    }
+    .horas {
+        width: 6px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 50% 10%;
+    }
+    .minutos {
+        width: 4px;
+        height: 80px;
+        top: 50%;
+        left: 50%;
+        transform-origin: 50% 10%;
+    }
+    .segundos {
+        width: 3px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        background-color: red;
+        transform-origin: 100% 10%;
+    }
+    @keyframes girarHoras {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes girarMinutos {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes girarSegundos {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .horas {
+        animation: girarHoras 12h linear infinite;
+    }
+    .minutos {
+        animation: girarMinutos 60min linear infinite;
+    }
+    .segundos {
+        animation: girarSegundos 60s linear infinite;
+    }
+</style>
+</head>
+<body>
+<div class="reloj">
+    <div class="manecilla horas"></div>
+    <div class="manecilla minutos"></div>
+    <div class="manecilla segundos"></div>
+</div>
+</body>
+</html>
