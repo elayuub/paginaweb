@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Péndulo Animado</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: blanchedalmond;
+    }
+    .caja {
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple;
+        position:static;
+        border: 2px transparent #333;
+    }
+    .pendulo {
+        width: 2px;
+        height: 100px;
+        background-color: plum;
+        position: relative;
+        animation: oscilar 2s ease-in-out infinite alternate;
+        transform-origin: center bottom;
+    }
+    @keyframes oscilar {
+        0% { transform: rotate(15deg); }
+        100% { transform: rotate(-15deg); }
+    }
+</style>
+</head>
+    <body>
+        <div class="pendulo"></div>
+            <div class="caja"></div>
+        
+    </body>
+</html>
